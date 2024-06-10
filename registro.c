@@ -1,10 +1,10 @@
 //
 // Created by Gabriel on 09/06/2024.
 //
-
-struct {
+#include <stdio.h>
+#include "stdlib.h"
+struct aluno {
     char nome[30];
-    char autor[50];
-    int paginas;
-    float preco;
-} livro;
+    int idade;
+    int numero_matricula;
+};

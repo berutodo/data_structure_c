@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "registro.c"
 static int a = 0;
 
 void incrementa(void){
@@ -31,4 +32,9 @@ int main(void) {
     **ptr2 = 30;
     *ptr = 20;
     printf("valor ponteiro: %d, valor da variavel original: %d, copia ponteiro: %d", *ptr, valor,**ptr2);
+    struct aluno Gabriel;
+    Gabriel.idade = 22;
+    strcpy(Gabriel.nome, "Gabriel");
+    printf("\nidade teste: %s", Gabriel.nome);
+
 }
