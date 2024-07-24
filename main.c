@@ -11,6 +11,10 @@ void incrementa(void){
     c++;
 }
 
+void procedimento(int x){
+    printf("valor: %d",x);
+}
+
 int main(void) {
     int arr[] = {1,2,3,4,5,6,7,8,9,10};
     char vogais[5] = {'a', 'e', 'i', 'o', 'u'};
@@ -36,5 +40,8 @@ int main(void) {
     Gabriel.idade = 22;
     strcpy(Gabriel.nome, "Gabriel");
     printf("\nidade teste: %s", Gabriel.nome);
+
+    printf("\n------\n");
+    procedimento(10);
 
 }
