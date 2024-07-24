@@ -15,6 +15,12 @@ void procedimento(int x){
     printf("valor: %d",x);
 }
 
+int funcSoma(int x,int y){
+    int soma = x+y;
+    printf("%d\n",soma);
+    return soma;
+}
+
 int main(void) {
     int arr[] = {1,2,3,4,5,6,7,8,9,10};
     char vogais[5] = {'a', 'e', 'i', 'o', 'u'};
@@ -41,7 +47,9 @@ int main(void) {
     strcpy(Gabriel.nome, "Gabriel");
     printf("\nidade teste: %s", Gabriel.nome);
 
-    printf("\n------\n");
+    printf("\n---procedimento---\n");
     procedimento(10);
+    printf("\n---funcao normal---\n");
+    funcSoma(10,1);
 
 }
